@@ -1,0 +1,37 @@
+{
+    "name": "health901/aliyun-oss-upload",
+    "description": "laravel admin aliyun oss直传",
+    "type": "library",
+    "keywords": [
+        "laravel-admin",
+        "extension"
+    ],
+    "homepage": "https://github.com/health901/aliyun-oss-upload",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vrobin",
+            "email": "health901@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6",
+        "iidestiny/laravel-filesystem-oss": "^2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "VRobin\\AliyunOssUpload\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VRobin\\AliyunOssUpload\\AliyunOssUploadServiceProvider"
+            ]
+        }
+    }
+}
