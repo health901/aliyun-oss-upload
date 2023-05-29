@@ -17,13 +17,8 @@ use Illuminate\Support\Facades\URL;
 class OssUploader extends Field
 {
     public static $headerJs = [
-        'https://cdn.bootcss.com/vue/2.6.10/vue.min.js',
-        'https://cdn.jsdelivr.net/npm/vant@2.12.51/lib/vant.min.js',
-        'https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue2-sfc-loader.js',
-        '/vendor/laravel-admin-ext/aliyun-oss-upload/uploader.js',
     ];
     protected static $css = [
-        'https://cdn.jsdelivr.net/npm/vant@2.12.51/lib/index.css'
     ];
     protected $view = 'laravel-admin-aliyun-oss::file';
     protected static $sessionKey;
